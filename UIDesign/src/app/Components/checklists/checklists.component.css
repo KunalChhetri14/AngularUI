@@ -1,0 +1,80 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .example-header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+  }
+
+  .divFlex{
+      display: flex;
+  }
+  
+
+  .padding-1em{
+      margin-right:1em;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+
+  .mat-row:nth-child(even){
+    background-color:lightgrey;
+    }
+   .mat-header-row{
+    background-color:silver;
+    border-bottom-style:none;
+    
+   }
+
+   .flex-container .mat-icon{
+    vertical-align: middle;
+
+   }
+
+   /* .mat-cell{
+    /* border-left-style:solid;
+    padding-left:0.1em;  */
+   /* } */ */
+
+
+   .mat-row{
+       border-bottom-style: none;
+      
+   }
+
+   ::ng-deep  .mat-paginator-container{
+       border:solid 0.1em black;
+       margin:1em;
+       display:flex;
+       align-items: center;
+       justify-content: center !important;
+   }
+
+   ::ng-deep .mat-drawer-inner-container .mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content{
+       padding:0 0 0 0px;
+   }
+
+   ::ng-deep .mat-list-item .mat-button{
+       border-radius: 0px;
+   }
+
+   /* Border radius and border for matformfield Search bar */
+   .searchField ::ng-deep .mat-form-field-flex{
+    box-sizing: content-box;
+    border:solid 0.1em black;
+    border-radius:2em;
+   }
+
+
+  

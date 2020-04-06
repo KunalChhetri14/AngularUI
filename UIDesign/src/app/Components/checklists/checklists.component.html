@@ -1,0 +1,60 @@
+<div class="flex-container" >
+    
+        <div>
+               
+        </div>
+       
+        <div class="flex-container">
+            <div class="padding-1em searchField">
+                <mat-form-field appearance="none">
+                   <input  matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+                   <mat-icon  matPrefix>search</mat-icon>
+                 </mat-form-field>
+           </div>
+           <div>
+            <button  id="createRecordId" mat-raised-button (click)="createNewRecord(buttonPosition)">Create</button>
+           </div>
+           
+        </div>
+       
+   
+  </div>
+  
+  <div class="example-container ">
+  
+    <mat-table [dataSource]="dataSource"  style="margin:1em;box-sizing: content-box;border:solid 0.1em black;" matSort>
+  
+      <!-- ID Column -->
+      <ng-container matColumnDef="position">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.position}} </mat-cell>
+      </ng-container>
+  
+      <!-- Progress Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="weight">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Weight </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.weight}} </mat-cell>
+      </ng-container>
+  
+      <!-- Color Column -->
+      <ng-container matColumnDef="symbol">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Symbol </mat-header-cell>
+        <mat-cell *matCellDef="let row" > {{row.symbol}} </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+    </mat-table>
+    <div style="display:block">
+        <mat-paginator [hidePageSize]="true" [showFirstLastButtons]="true" [pageSize]=5></mat-paginator>
+    </div>
+    
+  </div>
+  

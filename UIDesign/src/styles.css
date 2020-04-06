@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+    background-color: white;
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+.sideNavItem .mat-button{
+    text-align: left;
+    background-color: white;
+    
+}
+
+/* .sideNavItem .mat-button:hover{
+    background-color:rgb(111, 119, 128);
+} */
+
+@media (min-width:1201px){
+    html{
+        font-size:16px;
+    }
+    .sideNavItem .mat-icon {
+        transform: scale(1);
+    }
+
+
+    
+
+    .sideNavItem .mat-list-item-content{
+        padding:0 0.5em;
+    }
+    .flex-container .mat-icon{
+        transform: scale(1);
+    }
+
+    .sideNavItem .mat-button{
+        font-size:16px;
+    }
+}
+
+
+@media (max-width:1200px){
+    html{
+        font-size:12px;
+    }
+    .sideNavItem .mat-icon {
+        transform: scale(0.9);
+    }
+    
+    .sideNavItem .mat-list-item-content{
+        padding:0 0.5em;
+    }
+    .flex-container .mat-icon{
+        transform: scale(0.9);
+    }
+
+    .sideNavItem .mat-button{
+        font-size:12px;
+    }
+}
+
+@media (max-width:600px){
+    html{
+        font-size:10px;
+    }
+    .sideNavItem 
+        .mat-icon {
+        transform: scale(0.8);
+        
+    }
+    
+
+    .sideNavItem .mat-list-item-content{
+            padding:0 0.5em;
+        }
+    
+    .flex-container .mat-icon{
+            transform: scale(0.8);
+        }
+        
+    .sideNavItem .mat-button{
+          font-size:10px;
+        }
+}
+
+@media (max-width:400px){
+    html{
+        font-size:8px;
+    }
+    .sideNavItem .mat-icon {
+        transform: scale(0.6);
+    }
+
+    
+
+    .sideNavItem .mat-list-item{
+        padding:0 0.5em;
+    }
+
+    .flex-container .mat-icon{
+        transform: scale(0.6);
+    }
+    .sideNavItem .mat-button{
+        font-size:8px;
+    }
+}
+
+.w-100{
+    width: 200%;
+}
+
+.alignStart{
+    text-align: left;
+}
+
+.borderStart{
+    border-style: solid;
+    border-width: 0.1em;
+    padding-right: 0.1em;
+}
+
+.paddingleft-6{
+    padding:0 0.5em;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
